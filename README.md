@@ -34,10 +34,10 @@ When a difference is found, it will report one of the following codes:
 	DIFF_ATTR_DTYPE	-- the type of an attribute differs between files
 
 
-Example:
+Example (command-line linux):
 
 
-	./ndiff.py foo.h5 bar.h5 
+	keith:~$ ./ndiff.py foo.h5 bar.h5 
 
 	Comparing 'foo.h5' and 'bar.h5'
 	------------------------------
