@@ -36,24 +36,23 @@ When a difference is found, it will report one of the following codes:
 
 Example:
 
-::
 
-	./ndiff.py foo.h5 bar.h5 
-
-	Comparing 'foo.h5' and 'bar.h5'
-	------------------------------
-	Examining /
-		bar5
-		bar3
-	** Attribute 'a' only in 'bar.h5' (DIFF_UNIQ_ATTR_B)**
-		bar2
-		bar
-		bar4
-	**  Different element types: 'group' and 'dataset' (DIFF_OBJECTS)
-	------------------------------
-	Examining /bar5/
-	** Element 'bar7' only in 'foo.h5' (DIFF_UNIQUE_A)**
-	** Element 'bar8' only in 'bar.h5' (DIFF_UNIQUE_B)**
-		bar6
-	** Different dtypes: '<type 'str'>' and '<type 'numpy.ndarray'>' (DIFF_DTYPE)**
+>	./ndiff.py foo.h5 bar.h5 
+>
+>	Comparing 'foo.h5' and 'bar.h5'
+>	------------------------------
+>	Examining /
+>		bar5
+>		bar3
+>	** Attribute 'a' only in 'bar.h5' (DIFF_UNIQ_ATTR_B)**
+>		bar2
+>		bar
+>		bar4
+>	**  Different element types: 'group' and 'dataset' (DIFF_OBJECTS)
+>	------------------------------
+>	Examining /bar5/
+>	** Element 'bar7' only in 'foo.h5' (DIFF_UNIQUE_A)**
+>	** Element 'bar8' only in 'bar.h5' (DIFF_UNIQUE_B)**
+>		bar6
+>	** Different dtypes: '<type 'str'>' and '<type 'numpy.ndarray'>' (DIFF_DTYPE)**
 
